@@ -8,9 +8,7 @@ function SettingsScreen() {
         <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
             <Text>Settings Screen</Text>
             <Button onPress={() => navigation.push("Home")}>Go to Home</Button>
-            <Button onPress={() => navigation.popTo("Details", {
-                itemId: Math.floor(Math.random() * 100),
-                })}>Go to Details</Button>
+            <Button onPress={() => navigation.popTo("Details")}>Go to Details</Button>
             <Button onPress={() => navigation.goBack()}>Go back</Button>
         </View>
     );
